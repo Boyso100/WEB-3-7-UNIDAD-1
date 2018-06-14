@@ -1,0 +1,165 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+   box-sizing: border-box; }
+
+$color-azul-claro: #4dbef3;
+$color-azul-medio: #566bd1;
+$color-azul-oscuro: #e7e9f4;
+
+body {
+background-image: url(../img/Firewatch-4K-Wallpaper-1.jpg);
+ background-repeat:no-repeat;
+    background-attachment: fixed;
+    color: black;
+    background-position: top;
+  position: relative;
+   font-family: LatoR, serif;
+  line-height: 1.7;
+  color: #777;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75vh);
+   }
+
+.principal{
+  color:  #FFC300;
+  text-transform: uppercase;
+  border: 10px;
+-webkit-text-fill-color: #FFC300  ;
+-webkit-text-stroke: 1px black;
+text-align: center;
+ display: block;
+      font-size: 50px;
+      font-weight: 400;
+      letter-spacing: 20px;
+      line-height: 1.4;
+      animation-name: entrarDerecha;
+      animation-duration: 1.5s;
+      animation-timing-function: ease-out;
+
+  }
+@font-face {
+  font-family: LatoR;
+  src: url(../fonts/Lato-Regular.ttf); }
+
+@font-face {
+  font-family: IndieF;
+  src: url(../fonts/IndieFlower.ttf); }
+
+#texto-logo {
+  font-family: IndieF;
+  font-size: 2em;
+  color: #fff; }
+
+
+a {
+  color: white;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+.wrap {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto; }
+
+.main {
+  width: 100%;
+  min-height: 1500px; }
+
+.seccionToggle {
+  display: none;
+  height: calc(100vh - 50px);
+ background-image: url(../img/Firewatch-4K-Wallpaper-1.jpg);
+  color: #fff;
+  padding: 10px ;
+  text-align: center; }
+  .seccionToggle h2 {
+    font-size: 30px;
+    margin-top: 20px; }
+  .seccionToggle p {
+    font-size: 20px;
+    margin-bottom: 50px; }
+  .seccionToggle button {
+    margin-top:10px;
+    background: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 40px;
+    display: inline-block;
+    border: 5px solid #001F3F;
+    transition: 0.3s all ease; }
+    .seccionToggle button:hover {
+      border: 5px solid #0074D9;
+      color: #0074D9; 
+      border-radius: 30px;
+    transition: all 0.20s linear;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: 2s;
+      }
+
+.btn-toggle {
+  height: 40px;
+  line-height: 40px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  display: block;
+  background: #FFDC00;
+  text-align: center; }
+  .btn-toggle:hover {
+    text-decoration: none; 
+text-transform: uppercase;
+  border-radius: 100px;
+  position: relative; 
+    transition: all 0.20s linear;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    }
+
+
+@keyframes entrarDerecha {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+
+
+.btn-animacion {
+  animation: entrarAbajo .5s ease-out .75s;
+  animation-fill-mode: backwards; }
+
+
+
+@media screen and (max-width: 500px) {
+  .seccionToggle h2 {
+    margin-top: 0; } }
+@media screen and (max-height: 550px) {
+  .seccionToggle h2 {
+    font-size: 40px;
+    margin-top: 0; } }
+
+    @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+
